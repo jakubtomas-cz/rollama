@@ -11,6 +11,22 @@ chmod +x ollama-restart.sh
 ./ollama-restart.sh
 ```
 
+## Make it available globally
+
+To run `ollama-restart` from anywhere, create a symlink:
+
+```bash
+ln -s /path/to/ollama-restart/ollama-restart.sh /usr/local/bin/ollama-restart
+```
+
+Then use it from any directory:
+
+```bash
+ollama-restart
+```
+
+> **Gotcha:** After creating the symlink, open a **new shell** and wait a moment — the command may not be found immediately until the PATH is refreshed.
+
 ## What it does
 
 1. Kills all running Ollama processes
