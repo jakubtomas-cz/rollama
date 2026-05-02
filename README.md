@@ -41,6 +41,5 @@ To set env vars, add `launchctl setenv` lines directly to the script before the 
 
 ```bash
 launchctl setenv OLLAMA_HOST "0.0.0.0:11434"
-launchctl setenv OLLAMA_MODELS "/Volumes/Models/ollama"
 launchctl setenv OLLAMA_KEEP_ALIVE "24h"
 ```
