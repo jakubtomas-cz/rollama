@@ -1,4 +1,4 @@
-# ollama-restart
+# rollama
 
 Restart Ollama to free up resources.
 
@@ -7,22 +7,22 @@ Restart Ollama to free up resources.
 ## Usage
 
 ```bash
-chmod +x ollama-restart.sh
-./ollama-restart.sh
+chmod +x rollama.sh
+./rollama.sh
 ```
 
 ## Make it available globally
 
-To run `ollama-restart` from anywhere, create a symlink:
+To run `rollama` from anywhere, create a symlink:
 
 ```bash
-ln -s /path/to/ollama-restart/ollama-restart.sh /usr/local/bin/ollama-restart
+sudo ln -s /path/to/rollama/rollama.sh /usr/local/bin/rollama
 ```
 
 Then use it from any directory:
 
 ```bash
-ollama-restart
+rollama
 ```
 
 > **Gotcha:** After creating the symlink, open a **new shell** and wait a moment — the command may not be found immediately until the PATH is refreshed.
