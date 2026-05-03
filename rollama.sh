@@ -16,6 +16,7 @@ echo "Starting Ollama..."
 
 # Restart via LaunchAgent
 launchctl stop com.ollama.ollama 2>/dev/null || true
+launchctl setenv OLLAMA_KEEP_ALIVE "10m"
 launchctl start com.ollama.ollama
 
 echo "Ollama restarted successfully."
