@@ -7,25 +7,21 @@ Restart Ollama to free up resources.
 ## Usage
 
 ```bash
-chmod +x rollama.sh
-./rollama.sh
+chmod +x rollama
+./rollama
 ```
 
 ## Make it available globally
 
-To run `rollama` from anywhere, create a symlink:
+To run `rollama` from anywhere, add the directory containing the script to your `PATH`. 
+
+For example, if you have the project in `~/path/to/rollama`, add a line like this to your shell configuration file (e.g., `~/.zshrc` or `~/.bash_profile`):
 
 ```bash
-sudo ln -s /path/to/rollama/rollama.sh /usr/local/bin/rollama
+export PATH="$HOME/path/to/rollama:$PATH"
 ```
 
-Then use it from any directory:
-
-```bash
-rollama
-```
-
-> **Gotcha:** After creating the symlink, open a **new shell** and wait a moment — the command may not be found immediately until the PATH is refreshed.
+Then, restart your terminal or run `source ~/.zshrc` (or your respective config file).
 
 ## What it does
 
